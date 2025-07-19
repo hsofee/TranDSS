@@ -530,28 +530,7 @@ print(np.all(bool_arr))            # False
 
 ---
 
-## Linear Algebra
 
-NumPy มีฟังก์ชันสำหรับ Linear Algebra ผ่าน `np.linalg`
-
-### Matrix Operations
-```python
-# Matrix creation
-A = np.array([[1, 2], [3, 4]])
-B = np.array([[5, 6], [7, 8]])
-
-# Matrix multiplication
-C = np.dot(A, B)                # หรือ A @ B
-print(C)
-# [[19 22]
-#  [43 50]]
-
-# Element-wise multiplication
-element_wise = A * B
-print(element_wise)
-# [[ 5 12]
-#  [21 32]]
-```
 
 ### Matrix Properties
 ```python
