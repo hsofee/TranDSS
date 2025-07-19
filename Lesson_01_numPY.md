@@ -786,7 +786,7 @@ print(f"Speedup: {time_slow/time_fast:.1f}x")
 ```python
 mystery_array = np.random.randint(1, 100, size=(5, 6))
 ```
-เขียนโค้ดหาข้อมูลต่อไปนี้:
+### 1.2 เขียนโค้ดหาข้อมูลต่อไปนี้:
 - Shape, dimensions, size, และ data type
 - ค่าต่ำสุด, สูงสุด, ค่าเฉลี่ย
 - ค่าเฉลี่ยของแต่ละแถวและแต่ละคอลัมน์
