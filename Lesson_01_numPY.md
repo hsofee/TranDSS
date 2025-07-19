@@ -395,6 +395,52 @@ Broadcasting เป็นความสามารถของ NumPy ในก
 2. ถ้า dimension ไม่เท่ากัน จะเติม 1 ทางซ้าย
 3. Arrays จะ compatible ถ้า dimension แต่ละอันเท่ากันหรือเป็น 1
 
+
+### Broadcasing
+ข้อแตกต่างระหว่าง Numpy Array กับ List คือ Numpy Array สามารถ assign ค่าพร้อม ๆ กัน ครั้งละหลาย ๆ องค์ประกอบได้ ตัวอย่างเช่น การตั้งค่าโดยใช้ช่วงของ index
+
+
+```python
+arr[0:5]=100
+arr
+```
+
+
+
+
+    array([100, 100, 100, 100, 100,   5,   6,   7,   8,   9,  10])
+
+
+
+การ reset ค่า array ใหม่
+
+
+```python
+arr = np.arange(0,11)
+arr
+```
+
+
+
+
+    array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10])
+
+
+
+สร้าง Array ใหม่ ด้วยการ Slices
+
+
+```python
+slice_of_arr = arr[0:6]
+slice_of_arr
+```
+
+
+
+
+    array([0, 1, 2, 3, 4, 5])
+
+
 ### ตัวอย่าง Broadcasting
 ```python
 # ตัวอย่างที่ 1: Scalar กับ Array
