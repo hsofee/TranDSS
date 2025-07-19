@@ -754,22 +754,7 @@ print(f"Speedup: {time_slow/time_fast:.1f}x")
 #     [0, 1, 0], 
 #     [0, 0, 1]]
 # c) 3x4 array ที่เต็มไปด้วยเลข 7
-```
 
-**เฉลย:**
-```python
-# a)
-a = np.arange(0, 11, 2)
-# หรือ a = np.array([0, 2, 4, 6, 8, 10])
-
-# b)
-b = np.eye(3)
-# หรือ b = np.identity(3)
-
-# c)
-c = np.full((3, 4), 7)
-# หรือ c = np.ones((3, 4)) * 7
-```
 
 #### ข้อ 1.2 (3 คะแนน)
 จากการสำรวจ array ต่อไปนี้:
@@ -784,12 +769,7 @@ mystery_array = np.random.randint(1, 100, size=(5, 6))
 #### ข้อ 1.3 (5 คะแนน)
 เขียนโค้ดสร้าง checkerboard pattern (รูปแบบหมากรุก) ขนาด 8x8 โดยใช้ 0 และ 1
 
-**เฉลย:**
-```python
-checkerboard = np.zeros((8, 8))
-checkerboard[1::2, ::2] = 1
-checkerboard[::2, 1::2] = 1
-```
+
 
 ### แบบฝึกหัดที่ 2: Indexing และ Slicing (15 คะแนน)
 
@@ -817,24 +797,6 @@ data = np.arange(1, 26).reshape(5, 5)
 1. Euclidean distance ระหว่างจุด 2 จุดใน n-dimensional space
 2. Cosine similarity ระหว่าง vector 2 ตัว
 3. Standard score (z-score) ของ array
-
-**Template:**
-```python
-def euclidean_distance(point1, point2):
-    """Calculate Euclidean distance between two points"""
-    # TODO: implement
-    pass
-
-def cosine_similarity(vec1, vec2):
-    """Calculate cosine similarity between two vectors"""
-    # TODO: implement
-    pass
-
-def standardize(arr):
-    """Calculate z-score of array"""
-    # TODO: implement
-    pass
-```
 
 #### ข้อ 3.2 (10 คะแนน)
 จำลอง Monte Carlo method เพื่อหาค่า π:
@@ -875,24 +837,7 @@ Implement Principal Component Analysis (PCA) algorithm:
 3. Find eigenvalues and eigenvectors
 4. Transform data to principal components
 
-**Template:**
-```python
-def pca(data, n_components):
-    """
-    Perform PCA on data
-    
-    Parameters:
-    data: np.array of shape (n_samples, n_features)
-    n_components: number of principal components
-    
-    Returns:
-    transformed_data: data in PC space
-    components: principal components
-    explained_variance_ratio: ratio of variance explained by each PC
-    """
-    # TODO: implement
-    pass
-```
+
 
 ### แบบฝึกหัดที่ 6: Performance และ Memory (10 คะแนน)
 
