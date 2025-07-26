@@ -1,0 +1,6 @@
+ID,Name,Age,Date
+101,Alice,25,2023-01-15
+102,Bob,30,2023-02-01
+103,Charlie,,N/A
+104,Diana,22,2023-03-12
+105,Ethan,NULL,2023-04-05
