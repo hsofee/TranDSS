@@ -139,9 +139,6 @@ DataFrame สามารถมองได้ว่าเป็นกลุ่�
 ```python
 import pandas as pd
 import numpy as np
-```
-
-```python
 from numpy.random import randn
 np.random.seed(101)
 ```
@@ -150,19 +147,12 @@ np.random.seed(101)
 df = pd.DataFrame(randn(5,4),
                   index='A B C D E'.split(),
                   columns='W X Y Z'.split())
-```
-
-```python
 df
 ```
 
-```python
-
-```
 
 ##### Selection and Indexing
 เราสามารถเรียกข้อมูลภายใน DataFrame ได้หลากหลายวิธี เช่น
-
 ######## การเรียกผ่าน column name
 
 ```python
@@ -173,9 +163,6 @@ df['W']
 
 ```python
 
-```
-
-```python
 df[['W','Z']]
 ```
 
@@ -195,19 +182,10 @@ type(df['W'])
 
 ```python
 df['new1'] = df['W'] + df['Y']
-```
-
-```python
 df['new2'] = df['X'] + df['Z']
-```
-
-```python
 df
 ```
 
-```python
-
-```
 
 ให้นกศึกษาทำการสร้าง new3,new4,new5 โดยมีรูปแบบ ดังนี้
 new3 (x/z) , new4(z+w) , new5(ค่า AVG (w,x,y,z ) **ทำข้อความเป็นตัวหนา**
