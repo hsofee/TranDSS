@@ -315,11 +315,11 @@ data = {'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
         'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix']}
 df = pd.DataFrame(data)
 
-## เลือกคอลัมน์ 'Name' และ 'Age'
+## โจทย์ 1:  เลือกคอลัมน์ 'Name' และ 'Age'
 ## เลือกแถวที่มีค่า 'Age' มากกว่า 25
 
 
-โจทย์ 2: จาก DataFrame ที่กำหนดให้ ให้เลือกและแสดงเฉพาะข้อมูลของแถวที่ 2 ถึงแถวที่ 4 (นับจาก 0) และคอลัมน์ 'Name' ถึง 'City'
+โจทย์ 2: จาก DataFrame ที่กำหนดให้ ให้เลือกและแสดงเฉพาะข้อมูลของแถวที่ 2 ถึงแถวที่ 4 (นับจาก 0) และคอลัมน์ 'Name' ถึง 'City' โดย city เป็น los angeles
 
 import pandas as pd
 
@@ -329,7 +329,7 @@ data = {'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
         'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix']}
 df = pd.DataFrame(data)
 
-## เปลี่ยนค่าในคอลัมน์ 'City' เป็น 'San Francisco' สำหรับแถวที่มีค่า 'Age' น้อยกว่า 25
+## เปลี่ยนค่าในคอลัมน์ 'City' เป็น 'San Francisco' สำหรับแถวที่มีค่า 'Age' น้อยกว่า 25 
 
 
 ##### More Index Details
