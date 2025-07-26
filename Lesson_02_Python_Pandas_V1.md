@@ -46,13 +46,7 @@ d = {'a':10,'b':20,'c':30}
 
 ```python
 pd.Series(data=my_list)
-```
-
-```python
 pd.Series(data=my_list,index=labels)
-```
-
-```python
 pd.Series(my_list,labels)
 ```
 
@@ -60,9 +54,6 @@ pd.Series(my_list,labels)
 
 ```python
 pd.Series(arr)
-```
-
-```python
 pd.Series(arr,labels)
 ```
 
@@ -96,9 +87,6 @@ pd.Series([sum,print,len])
 ser1 = pd.Series([1,2,3,4],
                  index = ['USA', 'Germany',
                           'USSR', 'Japan'])
-```
-
-```python
 ser1
 ```
 
@@ -106,9 +94,6 @@ ser1
 ser2 = pd.Series([1,2,5,4],
                  index = ['USA', 'Germany',
                           'Italy', 'Japan'])
-```
-
-```python
 ser2
 ```
 
@@ -123,9 +108,6 @@ Operation ระหว่าง series จะกระทำต่อกัน�
 
 ```python
 ser1 + ser2
-```
-
-```python
 ser2+ser1
 ```
 
@@ -219,17 +201,8 @@ df
 
 ```python
 del df['new2']
-```
-
-```python
 df
-```
 
-```python
-
-```
-
-```python
 
 ```
 
@@ -267,9 +240,6 @@ df.loc['B','Y']
 
 ```python
 df.loc[['A','B'],['W','Y']]
-```
-
-```python
 df
 ```
 
@@ -282,7 +252,6 @@ df
 ```python
 df
 df['new2']= df.loc['B'] + df.loc['Z']
-
 df
 ```
 
@@ -295,9 +264,6 @@ df
 
 ```python
 df
-```
-
-```python
 df>0.1
 ```
 
@@ -331,9 +297,6 @@ df[df['W']>0][['Y','X']]
 
 ```python
 df[(df['W']>1) | (df['Y'] > 1)]
-```
-
-```python
 df[(df['W']>0) & (df['Y'] > 1)]
 ```
 
@@ -341,10 +304,6 @@ df[(df['W']>0) & (df['Y'] > 1)]
 
 ```python
 df[(df['X']<0)&(df['Z'] >= 0)][['Y','X']]
-```
-
-```python
-
 ```
 
 **โจทย์  1** <BR>
@@ -425,9 +384,6 @@ hier_index = pd.MultiIndex.\
 
 ```python
 hier_index
-```
-
-```python
 df = pd.DataFrame(np.random.randn(6,2),
                   index=hier_index,
                   columns=['A','B'])
@@ -566,9 +522,6 @@ df.groupby() จะมีค่าเป็น object หนึ่ง ซึ่�
 
 ```python
 by_comp = df.groupby("Company")
-```
-
-```python
 
 ```
 
@@ -974,9 +927,6 @@ df.describe()
 
 ```python
 del df['col1']
-```
-
-```python
 df
 ```
 
@@ -1017,9 +967,6 @@ df.isnull()
 
 ```python
 df.isnull().sum()
-```
-
-```python
 df.dropna()
 ```
 
@@ -1103,9 +1050,6 @@ df = pd.read_csv('/content/sample_data/california_housing_train.csv')
 df
 ```
 
-```python
-
-```
 
 ####### CSV Output
 df.to_csv() เป็นการ export DataFrame ออกไปเป็นไฟล์ CSV
@@ -1129,9 +1073,6 @@ pd.read_excel( ) เป็นการอ่านไฟล์ excel
 ```python
 #path ='/dataset/Excel_Sample.xlsx'
 /content/sample_data/SPU training.xlsx
-```
-
-```python
 pd.read_excel('/content/sample_data/Excel_Sample.xlsx',sheet_name='Sheet1')
 ```
 
